@@ -9,9 +9,12 @@ body {
 
 
 header {
-  background-color: #ec91c4;
   padding-top: 30px;
   padding-bottom: 60px;
+}
+
+header, #about, #projects {
+  background-color: #ec91c4;
 }
 
 header, #me-working, #about, #skills-and-tools, #projects, #contact {
@@ -22,7 +25,7 @@ header, #me-working, #about, #skills-and-tools, #projects, #contact {
 } 
 
 .content-wrapper {
-  width: 85%;
+  width: 90%;
 }
 
 nav {
@@ -31,11 +34,12 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 ul {
   list-style-type: none;
+  text-decoration: none;
   margin: 0;
   padding: 0;
 }
@@ -50,30 +54,15 @@ a {
   text-decoration: none;
 }
 
-header h1 {
+header h1, h2 {
   width: 100%;
-}
-
-h1 {
-  margin: 0;
 }
 
 header h2 {
-  width: 100%;
   margin-top: 60px;
-  font-size: 1.25 rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   font-weight: 400;
-}
-
-#about {
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-flow: row wrap;
 }
 
 figure {
@@ -86,11 +75,13 @@ figure {
 }
 
 #about {
-  background-color: #ec91c4;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .about-info h3 {
-  padding-top: 35px 0 35px 0;
+  padding: 35px 0 35px 0;
   font-weight: bold;
 }
 
@@ -103,8 +94,12 @@ figure {
   margin-bottom: 40px;
 }
 
-#skills-and-tools h4 {
+#skills-and-tools {
   margin-bottom: 40px;
+}
+
+#skills-and-tools h3 {
+  margin-top: 40px;
 }
 
 .language-wrapper p, .tool-wrapper p {
@@ -113,10 +108,6 @@ figure {
   margin: 20px 0;
   text-transform: uppercase;
   font-size: 1.125rem;
-}
-
-#skills-and-tools h3 {
-  margin-top: 40px;
 }
 
 .project-header {
@@ -130,6 +121,7 @@ figure {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  padding-bottom: 40px;
 }
 
 .project-piece {
@@ -140,13 +132,41 @@ figure {
   align-items: center;
 }
 
-.project-piece figure {
+.project-piece figure, img, .contact-info {
   width: 100%;
 }
 
 img {
-  width: 100%;
   vertical-align: middle;
+}
+
+#projects p {
+  text-align: justify;
+}
+
+#projects .span-left {
+  width: 100%;
+  text-align: left;
+}
+
+#contact h2 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-icons li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 
