@@ -1,4 +1,8 @@
 
+/*--------Mobile version----------*/
+
+/*--------General style-----------*/
+
 body {
   font-family: 'Alata', sans-serif;
   font-size: 1em;
@@ -28,13 +32,16 @@ header, #me-working, #about, #skills-and-tools, #projects, #contact {
   width: 90%;
 }
 
+/*--------Nav style-----------*/
+
 nav {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 nav ul {
   display: flex;
   justify-content: space-around;
+  font-size: 0.8rem;
 }
 
 ul {
@@ -50,9 +57,22 @@ header nav ul li {
   text-transform: uppercase;
 }
 
-a {
+nav #contact-link {
+  background-color: #f4bedc;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+
+a:link, a:visited {
+  color: #351d77;
   text-decoration: none;
 }
+
+a:hover, a:active {
+  color: #f4bedc;
+}
+
+/*--------Header style-----------*/
 
 header h1, h2 {
   width: 100%;
@@ -74,6 +94,8 @@ figure {
   vertical-align: middle;
 }
 
+/*--------About section-----------*/
+
 #about {
   width: 100%;
   padding-top: 60px;
@@ -89,6 +111,8 @@ figure {
   text-align: justify;
 }
 
+/*--------Skills-----------*/
+
 .skills-header {
   margin-top: 60px;
   margin-bottom: 40px;
@@ -100,6 +124,7 @@ figure {
 
 #skills-and-tools h3 {
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .language-wrapper p, .tool-wrapper p {
@@ -109,6 +134,8 @@ figure {
   text-transform: uppercase;
   font-size: 1.125rem;
 }
+
+/*--------Projects-----------*/
 
 .project-header {
   margin-top: 60px;
@@ -149,6 +176,8 @@ img {
   text-align: left;
 }
 
+/*--------Footer style-----------*/
+
 #contact h2 {
   padding-top: 40px;
   padding-bottom: 20px;
@@ -179,8 +208,70 @@ img {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
+
   /* Style adjustments for viewports that meet the condition */
+
+  .content-wrapper {
+    max-width: 640px;
+  }
+
+  nav ul {
+    font-size: 1.125rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header h2 {
+    font-size: 1.3rem;
+  }
+
+  #me-working figure {
+    width: 60%;
+  }
+
+  .language-wrapper, .tool-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .language-wrapper p, .tool-wrapper p, .project-piece {
+    width: 45%;
+  }
+
+  .project-wrapper {
+    justify-content: space-around;
+  }
+
+  #github-span-left {
+    padding: 18px 0 0 0;
+  }
 }
 
 
+@media only screen and (min-width: 1200px) {
+
+  header {
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
+
+  header .content-wrapper {
+    justify-content: flex-end;
+  }
+
+  .content-wrapper {
+    max-width: 1450px;
+  }
+
+  header nav {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+
+}
