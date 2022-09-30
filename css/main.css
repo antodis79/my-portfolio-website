@@ -260,18 +260,80 @@ img {
     padding-bottom: 140px;
   }
 
-  header .content-wrapper {
-    justify-content: flex-end;
-  }
-
   .content-wrapper {
     max-width: 1450px;
   }
 
   header nav {
-    width: 50%;
+    width: 45%;
     justify-content: flex-end;
+    margin-left: auto;
   }
 
+  header h1 {
+    font-size: 4rem;
+  }
 
+  header h2 {
+    font-size: 2rem;
+  }
+
+  #about h1 {
+    font-size: 3.75rem;
+  }
+
+  #about h3 {
+    font-size: 2.75rem;
+    font-weight: bold;
+  }
+
+  #about p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  #skills-and-tools {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+  }
+
+  #skills-and-tools .content-wrapper {
+    max-width: 900px;
+  }
+
+  #skills-and-tools h2 {
+    font-size: 2.75rem;
+  }
+
+  #skills-and-tools h3 {
+    font-size: 1.75rem;
+  }
+
+  .skills-header {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  .project-header {
+    font-size: 2.75rem;
+    margin-bottom: 60px;
+  }
+
+  .project-piece {
+    width: 35%;
+  }
+
+  .project-piece h3, p {
+    font-size: 1.25rem;
+  }
+
+  #contact h2 {
+    font-size: 2.75rem;
+  }
+
+  .social-icons {
+    width: 12.5em;
+    margin: auto;
+  }
 }
