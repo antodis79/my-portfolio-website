@@ -85,13 +85,14 @@ header h2 {
   font-weight: 400;
 }
 
-figure {
-  margin: 20px 0 40px 0;
+#me-working {
+  background-image: url("student-gb7c5662ec_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-#working-image {
-  width: 90%;
-  vertical-align: middle;
+figure {
+  margin: 0;
 }
 
 /*--------About section-----------*/
@@ -229,7 +230,7 @@ img {
   }
 
   #me-working figure {
-    width: 60%;
+    width: 100%;
   }
 
   .language-wrapper, .tool-wrapper {
@@ -261,7 +262,7 @@ img {
   }
 
   .content-wrapper {
-    max-width: 1450px;
+    max-width: 1000px;
   }
 
   header nav {
