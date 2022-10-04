@@ -68,10 +68,6 @@ a:link, a:visited {
   text-decoration: none;
 }
 
-a:hover, a:active {
-  color: #f4bedc;
-}
-
 /*--------Header style-----------*/
 
 header h1, h2 {
@@ -158,6 +154,12 @@ figure {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 30px 0;
+}
+
+.project-piece h3 {
+  font-size: 1.25rem;
+  padding-top: 20px;
 }
 
 .project-piece figure, img, .contact-info {
@@ -175,6 +177,18 @@ img {
 #projects .span-left {
   width: 100%;
   text-align: left;
+  line-height: 1.5;
+  margin: auto;
+
+}
+
+.view-project-link {
+  background-color: #f4bedc;
+  padding: 10px 10px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 /*--------Footer style-----------*/
@@ -248,9 +262,6 @@ img {
     justify-content: space-around;
   }
 
-  #github-span-left {
-    padding: 18px 0 0 0;
-  }
 }
 
 
