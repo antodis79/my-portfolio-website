@@ -245,6 +245,14 @@ img {
 
   #me-working figure {
     width: 100%;
+    max-height: 20rem;
+  }
+
+  #me-working img {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
   }
 
   .language-wrapper, .tool-wrapper {
