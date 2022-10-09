@@ -246,6 +246,7 @@ img {
   #me-working figure {
     width: 100%;
     max-height: 20rem;
+    height: 400px;
   }
 
   #me-working img {
@@ -296,6 +297,10 @@ img {
 
   header h2 {
     font-size: 2rem;
+  }
+
+  #me-working figure {
+    height: 400px;
   }
 
   #about h1 {
